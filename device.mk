@@ -389,6 +389,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.logcat.rc \
     init.qcom.asus.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
