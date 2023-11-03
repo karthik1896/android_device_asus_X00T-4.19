@@ -156,6 +156,7 @@ vendor.gralloc.disable_ahardware_buffer=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.latch_unsignaled=1
 ro.surface_flinger.protected_contents=true
+dev.pm.dyn_samplingrate=1
 
 # DRM
 drm.service.enabled=true
