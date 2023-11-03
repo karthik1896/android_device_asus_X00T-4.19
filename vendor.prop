@@ -163,6 +163,7 @@ dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 ro.config.avoid_gfx_accel=true
 vendor.display.disable_metadata_dynamic_fps=1
+vendor.display.perf_hint_window=50
 
 # DRM
 drm.service.enabled=true
