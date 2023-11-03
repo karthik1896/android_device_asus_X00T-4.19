@@ -158,6 +158,7 @@ debug.sf.latch_unsignaled=1
 ro.surface_flinger.protected_contents=true
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
+ro.config.avoid_gfx_accel=true
 
 # DRM
 drm.service.enabled=true
