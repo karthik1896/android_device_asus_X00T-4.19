@@ -155,6 +155,7 @@ vendor.display.disable_skip_validate=1
 vendor.gralloc.disable_ahardware_buffer=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.latch_unsignaled=1
+ro.surface_flinger.protected_contents=true
 
 # DRM
 drm.service.enabled=true
