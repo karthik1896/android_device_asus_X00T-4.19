@@ -162,6 +162,7 @@ ro.surface_flinger.protected_contents=true
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 ro.config.avoid_gfx_accel=true
+vendor.display.disable_metadata_dynamic_fps=1
 
 # DRM
 drm.service.enabled=true
