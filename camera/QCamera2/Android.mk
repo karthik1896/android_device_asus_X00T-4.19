@@ -53,16 +53,6 @@ LOCAL_CFLAGS += -DMEMLEAK_FLAG
 
 ifeq ($(TARGET_SUPPORT_HAL1),false)
 LOCAL_CFLAGS += -DQCAMERA_HAL3_SUPPORT
-LOCAL_SRC_FILES += \
-	HAL/QCameraMem.cpp \
-	HAL/QCameraThermalAdapter.cpp \
-        util/QCameraFOVControl.cpp \
-        util/QCameraHALPP.cpp \
-        util/QCameraDualFOVPP.cpp \
-        util/QCameraExtZoomTranslator.cpp \
-        util/QCameraPprocManager.cpp \
-        util/QCameraBokeh.cpp \
-        util/QCameraClearSight.cpp
 else
 LOCAL_CFLAGS += -DQCAMERA_HAL1_SUPPORT
 LOCAL_SRC_FILES += \
@@ -99,8 +89,6 @@ ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) <= 23 ))" )))
 LOCAL_CFLAGS += -DUSE_HAL_3_3
 endif
 endif
-
-LOCAL_CFLAGS += -DVANILLA_HAL
 
 #use media extension
 ifeq ($(TARGET_USES_MEDIA_EXTENSIONS), true)
