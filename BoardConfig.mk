@@ -87,11 +87,16 @@ BOARD_KERNEL_CMDLINE += service_locator.enable=1 loop.max_part=7
 BOARD_KERNEL_CMDLINE += printk.devkmsg=on
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
-BOARD_KERNEL_IMAGE_NAME  := Image.gz-dtb
-
+BOARD_MKBOOTIMG_ARGS := --header_version 1
+TARGET_KERNEL_APPEND_DTB := true
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/asus/sdm660
 TARGET_KERNEL_CONFIG := vendor/X00TD_defconfig vendor/debugfs.config
 TARGET_KERNEL_VERSION := 4.19
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+KERNEL_SD_LLVM_SUPPORT := true
+TARGET_USES_UNCOMPRESSED_KERNEL := false
 
 # LMKD
 TARGET_LMKD_STATS_LOG := true
@@ -121,7 +126,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist
 
 # Platform
-TARGET_BOARD_PLATFORM := sdm660
 TARGET_ENFORCES_QSSI := true
 
 # Power
