@@ -333,8 +333,7 @@ TARGET_BOARD_PLATFORM := sdm660
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service \
-    android.hardware.power-impl \
-    vendor.qti.hardware.perf@2.2.vendor
+    android.hardware.power-impl
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
@@ -363,6 +362,10 @@ PRODUCT_COPY_FILES += \
 # QNS
 PRODUCT_PACKAGES += \
     libstdc++_vendor
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
 
 # QTI Performance
 PRODUCT_COPY_FILES += \
